@@ -18,5 +18,7 @@ function submitReview(event) {
     const reviewMessage = `Thank you, ${username}, for your review of ${brandName}.\nRating: ${rating}\nComment: ${comment}`;
     alert(reviewMessage);
 
+    alert("Thak you for your review!")
+
     closeReviewForm();
 }
