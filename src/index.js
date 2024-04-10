@@ -22,3 +22,9 @@ function submitReview(event) {
 
     closeReviewForm();
 }
+// Fetch requests
+function getBrandReviews(){
+    fetch("http://localhost:3000/reviews")
+     .then(response => response.json())
+     .then(data => {console.log(data);});
+}

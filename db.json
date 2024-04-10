@@ -1,0 +1,28 @@
+{
+    "reviews": {
+      "Brand 1": [
+        {
+          "username": "user1",
+          "rating": 5,
+          "comment": "Great products, love them!"
+        },
+        {
+          "username": "user2",
+          "rating": 4,
+          "comment": "Good quality, but a bit pricey."
+        }
+      ],
+      "Brand 2": [
+        {
+          "username": "user3",
+          "rating": 3,
+          "comment": "Okay products, nothing special."
+        },
+        {
+          "username": "user4",
+          "rating": 2,
+          "comment": "Not impressed, won't buy again."
+        }
+      ]
+    }
+}
