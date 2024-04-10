@@ -4,7 +4,7 @@ Makeup brands and product website that allows a user to know different makeup br
 By *Angela Naliali Ogomo*
 
 ## Description
-This website displays the best best makeup brands and products and educates users on how to use them.It also caters for the beginners.
+This website displays the best best makeup brands and products and educates users on how to use them.The user is able to make a review what they think about the products and give their own ratings so that they the brand owners can know what to work on best.The main goal of this projects is to educate people on different brands and products to use on their skins.
 
 ## How to Use
 

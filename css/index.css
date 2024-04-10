@@ -9,7 +9,7 @@ body {
 /* Header styles */
 header {
     background-color: #333; 
-    color: #fff; 
+    color: #f08080; 
     padding: 20px;
     text-align: center;
 }
@@ -34,7 +34,7 @@ main {
 }
 
 .brand img {
-    max-width: 100%;
+    max-width: 70%;
 }
 
 .brand h3 {
