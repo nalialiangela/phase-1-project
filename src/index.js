@@ -1,54 +1,34 @@
 function openReviewForm(brandName) {
     document.getElementById("brandName").value = brandName;
     document.getElementById("reviewModal").style.display = "block";
+
+    openReviewForm()
 }
 
 function closeReviewForm() {
-    document.getElementById("reviewModal").style.display = "none";
+    document.getElementById("reviewModal").style.display = "none;
 }
 
-function submitReview(event) {
+//handling submit review form
+// Get the form element
+const form = document.getElementById('submit');
+
+// Add event listener for the form submit event
+form.addEventListener('submit', function(event) {
+    // Prevent the default form submission behavior
     event.preventDefault();
 
+    // Get form data
+    const formData = new FormData(form);
+    
+    // Perform form validation or data processing
+    // For example, you can access form fields using formData.get('fieldName')
 
-    const brandName = document.getElementById("brandName").value;
-    const username = document.getElementById("username").value;
-    const rating = document.getElementById("rating").value;
-    const comment = document.getElementById("comment").value;
+    // Log form data to console
+    console.log('Form submitted:', formData);
 
-    const reviewMessage = `Thank you, ${username}, for your review of ${brandName}.\nRating: ${rating}\nComment: ${comment}`;
-    alert(reviewMessage);
-
-    alert("Thank you for your review!")
-
-    closeReviewForm();
-   
-}
-
-// Function to handle form submission
-function handleSubmit(event) {
-    event.preventDefault(); // Prevent default form submission behavior
-
-    // Retrieve form data
-    const brandName = document.getElementById("brandName").value;
-    const username = document.getElementById("username").value;
-    const rating = document.getElementById("rating").value;
-    const comment = document.getElementById("comment").value;
-
-    // Create review object
-    const reviewObject = {
-        brandName: brandName,
-        username: username,
-        rating: rating,
-        comment: comment
-    };
-
-    // Call postReview function to submit review data
-    postReview(reviewObject);
-}
-
-// Attach submit event listener to the form
-document.getElementById("reviewForm").addEventListener("submit", handleSubmit);
+    
+});
 
 
 postReview(reviewObject)
